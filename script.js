@@ -118,8 +118,11 @@ zero.onclick = () => {
 
 
 decimal.onclick = () => {
-    if(!screen.value.includes('.')) {
+    if(!screen.value.includes('.') && operated === false) {
     screen.value += '.' ;
+    } else if(!screen.value.includes('.') && operated === true) {
+        screen.value = '.' ;
+        operated = false;
     }
 }
 
@@ -144,15 +147,23 @@ minus.onclick = () => {
 }
 
 times.onclick = () => {
-    inputOne = screen.value 
-    screen.value = ''
-    operation = 'times'
+    if(inputOne == '') {
+        inputOne = screen.value 
+        screen.value = ''
+        operation = 'times'
+    } else {
+        operation = 'times'
+    }
 }
 
 division.onclick = () => {
-    inputOne = screen.value 
-    screen.value = ''
-    operation = 'div'
+    if(inputOne == '') {
+        inputOne = screen.value 
+        screen.value = ''
+        operation = 'div'
+    } else {
+        operation = 'div'
+    }
 }
 
 
