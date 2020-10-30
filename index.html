@@ -3,34 +3,36 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/208e14b18c.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="style.css">
     <title>Calculator</title>
 </head>
 <body>
     <section class="box">
         <section class="screen">
-            <input value="" readonly >
+            <input value="" readonly>
         </section>
         <section class="buttons">
-            <button id="one">1</button>
-            <button id="two">2</button>
-            <button id="three">3</button>
-            <button id="addiction">+</button>
-            <button id="four">4</button>
-            <button id="five">5</button>
-            <button id="six">6</button>
-            <button id="minus">-</button>
-            <button id="seven">7</button>
-            <button id="eight">8</button>
-            <button id="nine">9</button>
-            <button id="times">*</button>
-            <button id="zero">0</button>
-            <button id="decimal">.</button>
-            <button id="clear">del</button>
-            <button id="division">/</button>
-            <button id="equal">=</button>
+            <button value="1" class="digitButton">1</button>
+            <button value="2" class="digitButton">2</button>
+            <button value="3" class="digitButton">3</button>
+            <button class="button" id="addiction">+</button>
+            <button value="4" class="digitButton">4</button>
+            <button value="5" class="digitButton">5</button>
+            <button value="6" class="digitButton">6</button>
+            <button class="button" id="minus">-</button>
+            <button value="7" class="digitButton">7</button>
+            <button value="8" class="digitButton">8</button>
+            <button value="9" class="digitButton">9</button>
+            <button class="button" id="times">*</button>
+            <button class="button" id="decimal">.</button>
+            <button value="0" class="digitButton">0</button>
+            <button class="button" id="blackSpace"><i class="fas fa-backspace"></i></button>
+            <button class="button" id="division">/</button>
+            <button class="button" id="clear">C</button>
+            <button class="button" id="equal">=</button>
+            <button class="button" id="clearEntry">CE</button>
         </section>
-
     </section>
     
     <script src="./script.js"></script>
